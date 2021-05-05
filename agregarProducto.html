@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="../css/agregarProducto.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Agregar Producto
+        </h1>
+    </header>
+    <main>
+        <form action="">
+            <label for="textoCodigo">Codigo</label>
+            <input id="textoCodigo" name="textoCodigo" placeholder="Codigo" type="tel" pattern="[0-9]{6}" required>
+            <br>
+            <label for="textoProducto">Producto</label>
+            <input id="textoProducto" name="textoProducto" placeholder="Producto" type="text" pattern="[a-zA-Z\s]{2,50}" required>
+            <br>
+            <label for="textoCategoria">Categoria</label>
+            <input id="textoCategoria" name="textoCategoria" placeholder="Categoria" type="text" pattern="[a-zA-Z\s]{2,50}" required>
+            <br>
+            <label for="textoPrecio">Precio</label>
+            <input id="textoPrecio" name="textoPrecio" placeholder="Precio" type="number" step="0.01" required>
+            <br>
+            <label for="textoProveedor">Proveedor</label>
+            <input id="textoProveedor" name="textoProveedor" placeholder="Proveedor" type="text" pattern="[a-zA-Z\s]{2,50}" required>
+            <br>
+            <button id="btnAgregar" type="submit">Agregar</button>
+        </form>
+        <br />
+        <br />
+
+    </main>
+    <script src="../js/agregarProducto.js"></script>
+</body>
+</html>

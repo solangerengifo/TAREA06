@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/producto.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Listado de Productos
+        </h1>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Filtros</legend>
+                <label for="combotest">Categorias</label>
+                <select name="" id="combotest"></select>
+                <!-- <label for="textoCategoria">Categoria</label>
+                <select id="textoCategoria">
+                    <option disabled = "disabled" selected = "selected">--Categorias--</option>
+                    <option value="Bebidas">Bebidas</option>
+                    <option value="Condimentos">Condimentos</option>
+                    <option value="Frutas/Verduras">Frutas/Verduras</option>
+                    <option value="Carnes">Carnes</option>
+                    <option value="Pescado/Marisco">Pescado/Marisco</option>
+                    <option value="Lacteos">Lacteos</option>
+                    <option value="Reposteria">Reposteria</option>
+                    <option value="Granos/Cereales">Granos/Cereales</option>
+                  </select> -->
+                
+                <label for="textoProveedor">Proveedor</label>
+                <input id="textoProveedor" name="textoProveedor" placeholder="Proveedor" type="text" >
+
+                <label for="textoProducto">Producto</label>
+                <input id="textoProducto" name="textoProducto" placeholder="Producto" type="text">
+                
+                <button id="btnBuscar" type="submit">BUSCAR</button>
+            </fieldset>
+        </form>
+        <br><br>
+        <table>
+            <tr>
+                <th><a href="" id="Codigo">Codigo</a></th>
+                <th><a href="" id="Producto">Producto</a></th>
+                <th><a href="" id="Categoria">Categoria</a></th>
+                <th><a href="" id="Precio">Precio</a></th>
+                <th><a href="" id="Proveedor">Proveedor</a></th>  
+                <th colspan="2">Acciones</th>
+            </tr>
+            <tbody id="contenidoTabla"></tbody>
+        </table>
+    </main>
+    <script src="../js/producto.js"></script>
+</body>
+
+</html>
